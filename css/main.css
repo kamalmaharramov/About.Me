@@ -1,0 +1,244 @@
+.headermenuitem{
+	margin-left:20px;
+	padding-bottom: 10px;
+	
+}
+
+
+.header{
+	background-color: black;
+	padding-top: 20px;
+}
+.headermenuitemlink{
+	text-decoration: none;
+	color: white;
+	margin-left: 10px;
+}
+.headermenucontent{
+	display: flex;
+
+}
+.headeritems{
+	display: flex;
+	justify-content: space-between;
+}
+.logocontent{
+	color: white;
+	text-decoration: none;
+}
+.logocontent:hover{
+	color: white;
+	text-decoration: none;
+}
+.headermenuitemlink:hover{
+	color: white;
+	text-decoration: none;
+	padding-bottom: 10px;
+	
+}
+.headermenu ul li a::hover {
+	padding-bottom: 3px ;	
+	border-bottom: 2px solid white;
+
+
+
+}
+
+.headermenu i {
+	display: none;
+}
+.headermenucontentmobile{
+	display: none ;
+}
+.aboutme{
+	padding: 50px ;
+	
+	background-color: #400;
+	
+}
+.aboutmeimage{
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+
+}
+.aboutme:hover {
+  transform: scale();
+}
+.aboutmecontent{
+	width: 50%;
+	color: white;
+	
+	font-size: 30px;
+	font-style: italic;
+	
+}
+.projectstext{
+	 
+		
+   	padding: 20px 0;
+
+}
+.projects{
+	background-color: #4323;
+	text-align: center;
+}
+.projectcontentsbottomtext{
+	margin-bottom: 0;
+}
+.projectswrap{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap:wrap;
+}
+.projectcontents{
+	  width: 30%;
+    background: white;
+    /* padding: 20px 0; */
+   margin-bottom: 45px;
+    padding-bottom: 20px;
+    box-shadow: 12px 3px #4323;
+
+    text-align: center;
+}
+.projectcontentstop{
+	overflow: hidden;
+	position: relative;
+	transition: 2000ms all;
+}
+.overlay{
+
+	position: absolute;
+	left: 0;
+	right: 100;
+	bottom: 0;
+	top: 0;
+}
+.projectcontentstop:hover .overlay{
+	overflow: visible;
+	position: absolute;
+	top: 0;
+	left: 100;
+	right: 0;
+	bottom: 0;
+	background-color: black;
+	opacity: 0.5;
+	transition: 2000ms all;
+	color: white ;
+}
+.projectcontentstop img{
+	width: 100%;
+}
+.projectcontentstop:hover .overlaycontent{
+	display: inline-block;
+}
+.overlaycontent{
+	display: none;
+}
+.footer{
+	background-color: #000;
+	text-align: center;
+	color: 	white;
+
+}
+
+.footermain{
+	color: white;
+	text-decoration: none ;
+	text-shadow: 1px 1px ;
+	font-style: oblique;
+	font-size: 30px;
+}
+.footer p{
+	margin-bottom: 0;
+}
+.footermain:hover{
+	color: white;
+}
+.contactme{
+	text-align: center;
+	background-color: #330;
+	color: white;
+	padding: 	20px 0;
+	
+}
+.contactme p {
+	margin-bottom: 0;
+	padding: 20px 0;
+}
+.contactmetext{
+	   display: flex;
+    justify-content: center;
+
+}
+.contactmetelephone{
+	    padding-right: 20px;
+	  
+}
+
+}
+}
+@media screen and (min-width: 992px) {
+
+.headermenucontentformobile{
+	display: none !important ;
+
+}
+}
+
+@media screen and (max-width: 991px) 	{
+.headermenu i{
+    display: block;
+    color: white;
+    font-size: 25px;
+  }
+ .headermenucontent{
+	display: none;
+	
+
+}
+.headermenuitemlink{
+	
+	margin: 20px;
+}
+.headermenu{
+	overflow: hidden;
+}
+.headermenucontentmobile{
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 50%;
+	background-color: #333;
+	
+	transition: 300ms all;
+
+}
+@media screen and (max-width: 660px){
+.aboutme .container{
+		flex-direction: 	column;
+}
+.aboutmeimage{
+	width: 	100px;
+	height: 	100px;
+}
+}
+@media screen and (max-width	:500px){
+	.projectcontents{
+		width: 	100%;
+		box-shadow: 4px 18px #4323;
+	}.contactmetext{
+		flex-direction: column;
+	}
+	h1{
+		font-size: 	15px
+	}
+	.footermain{
+		font-size: 	15px;
+	}
+	.aboutmecontent{
+		font-size: 	13px;
+		margin-top:10px;
+	}
+}
